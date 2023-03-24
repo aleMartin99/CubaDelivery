@@ -101,14 +101,14 @@ class _PurchaseConfirmation1State extends State<PurchaseConfirmation1> {
                 SizedBox(height: 24),
                 TextFormField(
                   textCapitalization: TextCapitalization.words,
-                  decoration: InputDecoration(               
+                  decoration: InputDecoration(
                     border: UnderlineInputBorder(),
                     filled: true,
                     icon: Icon(
                       Icons.person_outline,
                     ),
                     // ver si es nombre del q recibe el pedido o el q paga
-                    hintText: '$fullName ',                 
+                    hintText: '$fullName ',
                     hintStyle: TextStyle(color: Colors.black45),
                     labelText: '$name *',
                   ),
@@ -137,18 +137,16 @@ class _PurchaseConfirmation1State extends State<PurchaseConfirmation1> {
                   onSaved: (String value) {
                     this._phoneNumber = value;
                   },
-                  inputFormatters: <TextInputFormatter>[
-                    WhitelistingTextInputFormatter.digitsOnly
-                  ],
+                  inputFormatters: <TextInputFormatter>[],
                 ),
 
                 ConfirmationButtons(
                   button: 'Next',
-                  buttonAction: 
-                 ()=> Navigator.push(
+                  buttonAction: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => PurchaseConfirmation2())),),
+                          builder: (context) => PurchaseConfirmation2())),
+                ),
               ],
             ),
           ),

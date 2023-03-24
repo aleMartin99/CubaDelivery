@@ -69,9 +69,8 @@ class StoriesItemContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    final TextStyle titleStyle =
-        theme.textTheme.headline.copyWith(color: Colors.white);
-    final TextStyle descriptionStyle = theme.textTheme.subhead;
+
+    // final TextStyle descriptionStyle = theme.textTheme.subhead;
     var screenWidth = MediaQuery.of(context).size.width / 100;
     var screenHeight = MediaQuery.of(context).size.height / 100;
     return SizedBox(
@@ -86,7 +85,8 @@ class StoriesItemContent extends StatelessWidget {
               maxLines: 4,
               softWrap: false,
               overflow: TextOverflow.ellipsis,
-              style: descriptionStyle,
+              style: TextStyle(color: Colors.red),
+              //  style: descriptionStyle,
               child: Padding(
                 padding: const EdgeInsets.all(17.0),
                 child: Text(

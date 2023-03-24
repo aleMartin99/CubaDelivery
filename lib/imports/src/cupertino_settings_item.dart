@@ -46,10 +46,10 @@ class CupertinoSettingsItemState extends State<CupertinoSettingsItem> {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
-    final ListTileTheme tileTheme = ListTileTheme.of(context);
+    // final ListTileTheme tileTheme = ListTileTheme.of(context);
     IconThemeData iconThemeData;
-    if (widget.leading != null)
-      iconThemeData = IconThemeData(color: _iconColor(theme, tileTheme));
+    // if (widget.leading != null)
+    //   iconThemeData = IconThemeData(color: _iconColor(theme, tileTheme));
 
     Widget leadingIcon;
     if (widget.leading != null) {

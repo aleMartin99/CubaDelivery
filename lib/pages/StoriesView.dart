@@ -16,12 +16,11 @@ class StoriesView extends StatefulWidget {
   final List<PlaceItem> places;
   @override
   _StoriesViewState createState() => _StoriesViewState(
-        image: image,
-        description: description,
-        name: name,
-        title: title,
-        places: places
-      );
+      image: image,
+      description: description,
+      name: name,
+      title: title,
+      places: places);
 }
 
 class _StoriesViewState extends State<StoriesView> {
@@ -92,7 +91,7 @@ class _StoriesViewState extends State<StoriesView> {
                                   content: Text(
                                       'This action is valid in certains restaurants, for customers that order through a mobile Application.'),
                                   actions: <Widget>[
-                                    FlatButton(
+                                    TextButton(
                                         onPressed: () =>
                                             Navigator.pop(context, 'Ok'),
                                         child: Text(

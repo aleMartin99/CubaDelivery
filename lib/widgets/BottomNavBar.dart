@@ -27,17 +27,14 @@ class _BottomNavBarState extends State<BottomNavBar>
     Center(child: Settings()),
   ];
   final bottomBarItems = <BottomNavigationBarItem>[
-    BottomNavigationBarItem(
-        icon: Icon(Icons.restaurant), title: Text('Places')),
-    BottomNavigationBarItem(
-        icon: Icon(Icons.money_off), title: Text('Actions')),
+    BottomNavigationBarItem(icon: Icon(Icons.restaurant), label: 'Places'),
+    BottomNavigationBarItem(icon: Icon(Icons.money_off), label: 'Actions'),
     BottomNavigationBarItem(
         // icon: IconButton(icon:Icon(Icons.shopping_basket),onPressed: ()=> Navigator.push(context,Shop('jaja')),), title: Text('Shop')),
         icon: Icon(Icons.shopping_basket),
-        title: Text('Shop')),
-    BottomNavigationBarItem(icon: Icon(Icons.search), title: Text('Search')),
-    BottomNavigationBarItem(
-        icon: Icon(Icons.settings), title: Text('Settings')),
+        label: 'Shop'),
+    BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+    BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
   ];
 
   @override
